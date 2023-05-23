@@ -12,7 +12,7 @@
                              </div>
                              <nav>
                                 <a href="https://carloscastrofernandez.github.io/ProyectoFinalLLM/">Inicio</a>
-                                <a href="#titulo1">Ajustes</a>
+                                <a href="https://carloscastrofernandez.github.io/ProyectoFinalLLM/EleccionSelect">Ajustes</a>
                                 <a href="https://carloscastrofernandez.github.io/ProyectoFinalLLM/VentanaModal.html">Ventana Modal</a>
                                 <a href="https://carloscastrofernandez.github.io/ProyectoFinalLLM/ficheroPruebaArrays.html" target="_blank">TA-TE-TI</a>
                                 <a href="https://carloscastrofernandez.github.io/ProyectoFinalLLM/soldadito.xml">Cancion de guerra</a>
