@@ -1,0 +1,247 @@
+:root {
+   --familia-Letras: Ink Free;
+   --tamaño-letras:28px;
+   --color-Letras: white;
+   --color-Letras1: rgb(204, 204, 116);
+}
+
+*{
+   box-sizing: border-box;
+}
+body {
+   background-color: rgba(10, 10, 10, 0.92);
+
+}
+
+header {
+   margin-bottom: 0px;
+   background-repeat: repeat;
+   font-weight: bold;
+   font-family: Ink Free;
+   font-size:var(--tamaño-letras);
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   width: 100%;
+   height: 2em;
+   color:var(--color-Letras);
+
+
+}
+
+.autor {
+
+   font-family: Brush Script MT;
+   position: relative;
+   left: -1em;
+   color:rgb(204, 204, 116);
+}
+
+.imagenfondo {
+   margin-top: 0px;
+   box-sizing: border-box;
+   display: flex;
+   height: 80vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 7, 12, 0.50)),
+      url(./R.jpg);
+   background-repeat: no-repeat;
+   background-position: center, center;
+   background-size: cover;
+}
+
+
+h3 {
+   width: 100%;
+   height: 50%;
+ 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: var(--color-Letras1);
+   font-family: var(--familia-Letras);
+
+}
+
+h1 {
+   color: var(--color-Letras1);
+   font-family:var(--familia-Letras);
+}
+
+
+
+img {
+   display: inline-block;
+
+}
+
+article {
+   margin-left: 15px;
+   vertical-align: top;
+   display: inline-block;
+
+   width: 55%;
+}
+
+p {
+   color: var(--color-Letras);
+   font-family: var(--familia-Letras);
+}
+.pseudoelemento::first-line{
+   text-transform: uppercase;
+   color:red;
+}
+
+
+#cajaPuntoSeguido {
+   margin-left: 15px;
+   margin-right: 15px;
+   width: 45%;
+   display: inline-block;
+   vertical-align: top;
+}
+
+.articulo2 {
+   margin-left: -5px;
+   width: 100%;
+}
+
+#botonTienda {
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 10px;
+   width: 10%;
+   border-style: solid;
+   border-color: black;
+   border-radius: 90%;
+}
+
+h4{
+   font-family:var(--familia-Letras);
+   color:var(--color-Letras);
+   font-weight:bold;
+}
+.cajaSeguida{
+   display:inline-block;
+   vertical-align:top;
+   margin-right:45px;
+   margin-left:15px;
+}
+nav{
+   display:flex;
+   width:70%;
+   justify-content:space-around;
+   height:30px;
+}
+a{
+   text-decoration:none;
+   color:var(--color-Letras);
+}
+#botonTienda:active{
+   transform:scale(1.5);
+}
+
+a:hover{
+color:var(--color-Letras1);
+border-bottom:solid;
+}
+
+video{
+   background-color:rgba(10, 10, 10, 0.92);
+}
+#titulo1, #titulo2, #titulo3, #titulo4, #titulo5,
+#Titulo6{
+   display:flex;
+   justify-content:center;
+}
+.portaFoto {
+   width: 50vw;
+   height: 50vh;
+   background-color: lightpink;
+   display: block;
+}
+
+.laFoto {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+#fotosuperiorderecha {
+   transform: scalex(-1);
+}
+
+#fotoinferiorizquierda {
+   transform: scaley(-1);
+}
+
+#fotoinferiorderecha {
+   transform: scale(-1);
+}
+
+#caja {
+   display: flex;
+   flex-direction: row;
+}
+
+.columna {
+   display: flex;
+   flex-direction: column;
+}
+
+#cajaFlexible1, #cajaFlexible2, #cajaFlexible3,
+#cajaFlexible4, #cajaFlexible5{
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   width:177%;
+}
+.parrafo1, .parrafo2, .parrafo3, .parrafo4,.parrafo5{
+   color:var(--color-Letras);
+}
+.parrafo1::first-letter, .parrafo2::first-letter, .parrafo3::first-letter, 
+.parrafo4::first-letter,.parrafo5::first-letter{
+text-transform: uppercase;
+color:red;
+font-size:xx-large;
+font-family:Italic;
+}
+
+/*         Ahora me aseguro que el portarretratos no sea mayor
+que la foto más grande
+para evitar el pixelado */
+
+@media screen and (orientation:landscape){
+   .portaFoto {
+       max-width: 1920px;
+       max-height: 1280px;
+   }
+}
+
+@media screen and (orientation:portrait){
+   .portaFoto {
+       max-width: 800px;
+       max-height: 1200px;
+   }
+}
+@media screen and (max-width:850px){
+   #parte1, .cajaSeguida{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+   }
+   #cajaPuntoSeguido{
+      display:flex;
+      flex-direction:column;
+      margin:0 auto;
+   }
+   #imagenCentrada{
+      display:block;
+      margin:0 auto;
+   }
+   iframe{
+      display:block;
+      margin:0 auto;
+   }
+}

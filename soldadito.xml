@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="soldadito.xsl"?>
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/xampp/htdocs/proyectos/soldadito.xsd">
+	<titulo>Cuatro Soldaditos</titulo>
+	<autor>Los Rebujitos</autor>
+	<letras>
+		<estrofa >
+			<verso>Verde, verde, verde Mayo</verso>
+			<verso>Verde es la primavera</verso>
+			<verso>Cuatro son los soldaditos</verso>
+			<verso>Que se marchan para la guerra...</verso>			
+		</estrofa>
+		<estrofa>
+			<verso>Unos rien, otros cantan</verso>
+			<verso>Y otros llevan mucha pena</verso>
+			<verso>Pero el más pequeño de todos</verso>
+			<verso>El que más penita lleva...</verso>			
+		</estrofa>
+		<estrofa>
+			<verso>Le pregunta el capitan</verso>
+			<verso>¿Por qué llevas tanta pena?</verso>
+			<verso>¿Si es por madre, si es por padre</verso>
+			<verso>O es por qué vas a la guerra?</verso>			
+		</estrofa>
+		<estrofa>
+			<verso>Ni es por madre ni es por padre</verso>
+			<verso>Ni por que voy a la guerra</verso>
+			<verso>Es por una muchachita</verso>
+			<verso>Que me la he dejado en tierra...</verso>			
+		</estrofa>
+		<estrofa>
+			<verso>Hecha al mano al bolsillo</verso>
+			<verso>Saca una foto de ella</verso>
+			<verso>Y hasta el mismo capitan</verso>	
+			<verso>Se habia enamorao' de ella</verso>
+		</estrofa>
+		<estrofa>
+			<verso>Coge tu caballo blanco</verso>
+			<verso>Y vete con tu doncella</verso>
+			<verso>Que por un soldado menos</verso>
+			<verso>No perderemos la guerra</verso>
+		</estrofa>
+	</letras>
+</cancion>
+
