@@ -207,6 +207,22 @@ color:red;
 font-size:xx-large;
 font-family:Italic;
 }
+#dia, #noche{
+   position: absolute;
+   left: 0;
+   width: 100%;
+   cursor: pointer;
+}
+
+#dia{
+   display: none;
+}
+#zonaModo {
+   position: fixed;
+   bottom: 98%;
+   left: 92%;
+   width: 70px;
+}
 
 /*         Ahora me aseguro que el portarretratos no sea mayor
 que la foto más grande
