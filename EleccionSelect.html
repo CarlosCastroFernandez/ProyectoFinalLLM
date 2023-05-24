@@ -6,20 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="ajustes.css" type="text/css" rel="stylesheet">
   
 </head>
-<style>
-    :root {
-    --colorNormal:black;
-    font-size:1rem;
-    
-}
 
-p, h1, h2, h3 {
-    color:var(--colorNormal);
-}
-</style>
 <body>
+    <header>
+        <div class="autor">
+            Gimnasio Bubito
+        </div>
+        <nav>
+            <a href="https://carloscastrofernandez.github.io/ProyectoFinalLLM/">Inicio</a>
+            <a href="https://carloscastrofernandez.github.io/ProyectoFinalLLM/EleccionSelect">Ajustes</a>
+            <a href="https://carloscastrofernandez.github.io/ProyectoFinalLLM/VentanaModal.html">Ventana Modal</a>
+            <a href="https://carloscastrofernandez.github.io/ProyectoFinalLLM/ficheroPruebaArrays.html" target="_blank">TA-TE-TI</a>
+            <a href="https://carloscastrofernandez.github.io/ProyectoFinalLLM/soldadito.xml">Cancion de guerra</a>
+        </nav>
+
+
+    </header>
     <section id="ajustes">
 
         <p id="esteParrafo">Elija un Color</p>
@@ -42,22 +47,7 @@ p, h1, h2, h3 {
             <p id="mensaje"></p>
     </section>
 
-    <script>
-        function aplicarCambios() {
-            // mostramos en consola los valores recogidos en la pagina
-            var color = document.getElementsByName('colorElegido')[0];
-            console.log('color elegido ' + color.value);
-
-            var tam = document.getElementsByName('tamFuente')[0];
-            var tamelegido = tam[tam.selectedIndex].value;
-
-            // aplicamos el color y el tamaño a todo el documento
-            document.documentElement.style.fontSize = parseFloat(tamelegido) + "rem";
-            document.documentElement.style.setProperty("--colorNormal", color.value);
-            document.getElementById('mensaje').innerHTML = "APLICADO";
-
-        }
-    </script>
+    <script src="./ajustes.js"></script>
 
 </body>
 

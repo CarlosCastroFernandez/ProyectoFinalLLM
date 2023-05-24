@@ -1,0 +1,54 @@
+
+:root {
+    --familia-Letras: Ink Free;
+    --tamaño-letras:28px;
+    --color-Letras: white;
+    --color-Letras1: rgb(204, 204, 116);
+ }
+header {
+    background-color:rgba(10, 10, 10, 0.92);
+    margin-bottom: 0px;
+    background-repeat: repeat;
+    font-weight: bold;
+    font-family: Ink Free;
+    font-size:var(--tamaño-letras);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 2em;
+    color:var(--color-Letras);
+ 
+ 
+ }
+ 
+ .autor {
+ 
+    font-family: Brush Script MT;
+    position: relative;
+    left: -1em;
+    color:rgb(204, 204, 116);
+ }
+ nav{
+    display:flex;
+    width:70%;
+    justify-content:space-around;
+    height:30px;
+ }
+ a{
+    text-decoration:none;
+    color:var(--color-Letras);
+ }
+ a:hover{
+    color:var(--color-Letras1);
+    border-bottom:solid;
+}
+ :root {
+--colorNormal:black;
+font-size:1rem;
+        
+}
+    
+p, h1, h2, h3 {
+        color:var(--colorNormal);
+}
