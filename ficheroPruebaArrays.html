@@ -15,7 +15,9 @@
         <div class="autor">
             Gimnasio Bubito
         </div>
-      
+        <div id="nombreusuario">
+         <p>Nombre de usuario</p>
+        </div>
         <nav>
             <a href="https://carloscastrofernandez.github.io/ProyectoFinalLLM/">Inicio</a>
             <a href="https://carloscastrofernandez.github.io/ProyectoFinalLLM/EleccionSelect">Ajustes</a>
@@ -58,7 +60,21 @@
     <!--Escribimos en un cuadro con javascript-->
 
     <script src="./pruebaArrays.js"></script>
+    <script src="./login"></script>
+    <script >
+      // Obtener referencia al elemento div donde se mostrará el nombre
+    const nombreUsuarioDiv = document.getElementById('nombreusuario');
 
+    // Comprobar si hay un nombre guardado en la memoria de sesión
+    const nombreGuardado = sessionStorage.getItem('nombreusuario');
+    if (nombreGuardado) {
+  // Mostrar el nombre guardado en el div
+     nombreUsuarioDiv.textContent = nombreGuardado;
+    } else {
+  // Mostrar "Sin identificar" si no hay nombre guardado
+  nombreUsuarioDiv.textContent = 'Sin identificar';
+}
+    </script>
 </body>
 
 </html>
