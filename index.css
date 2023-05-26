@@ -83,6 +83,9 @@ article {
 
    width: 55%;
 }
+#nombreusuario{
+   font-size:20px;
+}
 
 p {
    color: var(--color-Letras);
