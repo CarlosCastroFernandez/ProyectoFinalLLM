@@ -60,7 +60,13 @@
     <!--Escribimos en un cuadro con javascript-->
 
     <script src="./pruebaArrays.js"></script>
-    <script src="./login.js"></script>
+    <script >
+        const nombre =document.getElementById('nombreusuario');
+        const nombreGuardado =sessionStorage.getItem('nombreusuario');
+        if(nombreGuardado){
+            nombre.textContent=nombreGuardado;
+        }
+    </script>
 </body>
 
 </html>
