@@ -3,7 +3,7 @@ const formUsuario = document.getElementById('formUsuario');
 const nombreUsuarioDiv = document.getElementById('nombreusuario');
 
 // Comprobar si hay un nombre guardado en la memoria de sesión
-const nombreGuardado = sessionStorage.getItem('nombreUsuario');
+const nombreGuardado = sessionStorage.getItem('nombreusuario');
 if (nombreGuardado) {
   // Mostrar el nombre guardado en el div
   nombreUsuarioDiv.textContent = nombreGuardado;
@@ -21,7 +21,7 @@ formUsuario.addEventListener('submit', function (event) {
   const nombreUsuario = document.getElementById('nombreInput').value;
 
   // Guardar el nombre en la memoria de sesión
-  sessionStorage.setItem('nombreUsuario', nombreUsuario);
+  sessionStorage.setItem('nombreusuario', nombreUsuario);
 
   // Mostrar el nombre en el div
   nombreUsuarioDiv.textContent = nombreUsuario;
