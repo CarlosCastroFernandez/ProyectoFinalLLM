@@ -51,7 +51,21 @@
     </section>
 
     <script src="./ajustes.js"></script>
-    <script src="login.js"></script>
+    <script src="./login"></script>
+    <script >
+      // Obtener referencia al elemento div donde se mostrará el nombre
+    const nombreUsuarioDiv = document.getElementById('nombreusuario');
+
+    // Comprobar si hay un nombre guardado en la memoria de sesión
+    const nombreGuardado = sessionStorage.getItem('nombreusuario');
+    if (nombreGuardado) {
+  // Mostrar el nombre guardado en el div
+     nombreUsuarioDiv.textContent = nombreGuardado;
+    } else {
+  // Mostrar "Sin identificar" si no hay nombre guardado
+  nombreUsuarioDiv.textContent = 'Sin identificar';
+}
+    </script>
 
 </body>
 

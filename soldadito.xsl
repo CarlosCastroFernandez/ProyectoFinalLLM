@@ -33,7 +33,7 @@
                                           </xsl:for-each>  
                                           
                             </xsl:for-each>
-                     <script src="./login.js"></script>
+                  
                      </body>
               </html>
        </xsl:template>
