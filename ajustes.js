@@ -1,14 +1,31 @@
 function aplicarCambios() {
-    // mostramos en consola los valores recogidos en la pagina
+    // Recogemos los valores seleccionados
     var color = document.getElementsByName('colorElegido')[0];
-    console.log('color elegido ' + color.value);
-
     var tam = document.getElementsByName('tamFuente')[0];
-    var tamelegido = tam[tam.selectedIndex].value;
-
-    // aplicamos el color y el tamaño a todo el documento
-    document.documentElement.style.fontSize = parseFloat(tamelegido) + "rem";
+    var tamElegido = tam[tam.selectedIndex].value;
+  
+    // Aplicamos el color y el tamaño a todo el documento
+    document.documentElement.style.fontSize = parseFloat(tamElegido) + "rem";
     document.documentElement.style.setProperty("--colorNormal", color.value);
     document.getElementById('mensaje').innerHTML = "APLICADO";
-
-}
+  
+    // Guardamos los valores seleccionados en el almacenamiento local
+    localStorage.setItem('colorElegido', color.value);
+    localStorage.setItem('tamFuenteElegido', tamElegido);
+  }
+  
+  // Función para cargar los valores guardados al cargar la página
+  function cargarValoresGuardados() {
+    // Obtenemos los valores guardados del almacenamiento local
+    var colorElegido = localStorage.getItem('colorElegido');
+    var tamFuenteElegido = localStorage.getItem('tamFuenteElegido');
+  
+    // Si hay valores guardados, los aplicamos a la página
+    if (colorElegido && tamFuenteElegido) {
+      document.documentElement.style.fontSize = parseFloat(tamFuenteElegido) + "rem";
+      document.documentElement.style.setProperty("--colorNormal", colorElegido);
+    }
+  }
+  
+  // Llamamos a la función cargarValoresGuardados al cargar la página
+  window.onload = cargarValoresGuardados;
