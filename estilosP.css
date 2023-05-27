@@ -101,14 +101,14 @@ a:hover{
       
       #mostrar-modal + label {
         
-        background: rgb(161, 14, 247);
+       
         display: table;
         color: #fff;
         line-height: 3;
         padding: 0 1em;
-        text-transform: uppercase;
+  
         cursor: pointer;
-        border-radius: 60%;
+       
       }
       #mostrar-modal + label:hover {
         background: #38678f;
