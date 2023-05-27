@@ -29,11 +29,11 @@ function ponerModoDia() {
     // Cambiar color de todos los elementos h1 a negro
     let elementosH1 = document.querySelectorAll('h1');
     elementosH1.forEach(function(h1) {
-        h1.style.color = "#6f03fc";
+        h1.style.color = "#cccc73";
     });
     let elementosP = document.querySelectorAll('p');
     elementosP.forEach(function(p) {
-        p.style.color = "blue";
+        p.style.color = "white";
     });
     var elementoBackground = document.body;
 
@@ -57,18 +57,18 @@ function ponerModoNoche() {
     // Cambiar color de todos los elementos h1 a rojo
     let elementosH1 = document.querySelectorAll('h1');
     elementosH1.forEach(function(h1) {
-        h1.style.color = "#eb2142";
+        h1.style.color = "red";
     });
 
     let elementosP = document.querySelectorAll('p');
     elementosP.forEach(function(p) {
-        p.style.color = "red";
+        p.style.color = "black";
     });
 
     var elementoBackground = document.body;
 
     // Establecer el color de fondo
-    elementoBackground.style.backgroundColor = "#f7b10a";
+    elementoBackground.style.backgroundColor = "white";
 
     let elementoBuy = document.getElementById('buy-button');
     elementoBuy.style.color = "#f7b10a";
