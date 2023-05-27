@@ -3,7 +3,7 @@
        <xsl:template match="/">
               <html>
                      <head>
-                            <link rel="stylesheet" type="text/css" href="estilos1.css"/>
+                            <link rel="stylesheet" type="text/css" href="estilosP.css"/>
                      </head>
                      <body>
                              <header>

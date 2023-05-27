@@ -10,7 +10,7 @@ header {
     margin-bottom: 0px;
     background-repeat: repeat;
     font-weight: bold;
-    font-family: Ink Free;
+    font-family: var(--familia-Letras);
     font-size:var(--tamaño-letras);
     display: flex;
     flex-direction: row;
@@ -36,6 +36,7 @@ header {
     height:30px;
  }
  a{
+   
     text-decoration:none;
     color:var(--color-Letras);
  }
@@ -70,6 +71,7 @@ p, h1, h2, h3 {
    background: rgba(67, 221, 75, 0.9);
    color: #e70808;
    position: fixed;
+   font-size:16px;
    top: -100vh;
    left: 150px;
    height: 80vh;

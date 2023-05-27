@@ -247,6 +247,7 @@ font-family:Italic;
    background: rgba(67, 221, 75, 0.9);
    color: #e70808;
    position: fixed;
+   font-size:16px;
    top: -100vh;
    left: 150px;
    height: 80vh;
@@ -297,6 +298,7 @@ font-family:Italic;
    border-radius: 50%;
    transition: all .5s;
  }
+ 
 
  #cerrar-modal:checked ~ #modal {
    top: -100vh;
