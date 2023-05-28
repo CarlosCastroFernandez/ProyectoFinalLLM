@@ -229,6 +229,9 @@ font-family:Italic;
    left: 92%;
    width: 70px;
 }
+#color{
+   color:white;
+}
 #modal p {
    width: 60%;
    height: 40%;
