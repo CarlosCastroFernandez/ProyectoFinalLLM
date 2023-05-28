@@ -28,4 +28,5 @@ function aplicarCambios() {
   }
   
   // Llamamos a la función cargarValoresGuardados al cargar la página
+  console.log("La página se ha cargado.");
   window.onload = cargarValoresGuardados;

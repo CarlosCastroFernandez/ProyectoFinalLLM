@@ -1,5 +1,5 @@
 var modo = leerModoActual();
-
+console.log("Modo actual:", modo);
 if(modo == "dia"){
     ponerModoDia();
 } else {
@@ -7,6 +7,7 @@ if(modo == "dia"){
 }
 
 function leerModoActual(){
+    
     let modo = window.localStorage.getItem("modoGuardado");
     if(!modo){
         return "dia";
