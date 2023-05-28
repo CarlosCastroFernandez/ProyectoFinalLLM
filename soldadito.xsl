@@ -3,7 +3,7 @@
        <xsl:template match="/">
               <html>
                      <head>
-                            <link rel="stylesheet" type="text/css" href="estilosP.css"/>
+                            <link rel="stylesheet" type="text/css" href="estilos1.css"/>
                      </head>
                      <body>
                              <header>
@@ -25,7 +25,7 @@
                                             en la zona inicio y en la misma pagina ya que en la ventana modal si se modificara 
                                            <br>
                                            el tamaño de la letra se me desectructura la ventana y no queda bien en el diseño y 
-                                          en el caso de que cambies de color se cambiara en la misma pagina y en la ventana modal
+                                           en el caso de que cambies de color se cambiara en la misma pagina y en la ventana modal
                                            ya que en la pagina inicio le tengo un color de letras por defecto respecto al modo dia y noche.
                                            </p>
                                     </div>
