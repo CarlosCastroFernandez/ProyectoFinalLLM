@@ -1,3 +1,9 @@
+:root {
+  --familia-Letras: Ink Free;
+  --tamaño-letras:18px;
+  --color-Letras: white;
+  --color-Letras1: rgb(204, 204, 116);
+}
 body{
     counter-reset:estrofa section;
     background-color:grey;
