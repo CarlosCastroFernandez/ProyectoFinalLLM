@@ -1,0 +1,26 @@
+body{
+    counter-reset:estrofa section;
+    background-color:grey;
+    text-align:center;
+}
+h2::before{
+counter-increment: estrofa;
+content:"" counter(estrofa)": ";
+}
+p::before{
+    counter-increment: section;
+    content:"verso: " counter(section) ": ";
+    color:red;
+}
+p{
+    font-size:xx-large;
+    color:blue;
+    font-weight:bold;
+}
+h2{
+    font-size:xx-large;
+}
+span{
+    display:block;
+    background-color:yellow;
+}
